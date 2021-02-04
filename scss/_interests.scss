@@ -1,0 +1,18 @@
+.interests{
+
+    background-color: $white;
+    padding-bottom: 3rem;
+    h1{
+        color: $darkGrey;
+    }
+    h2{
+        color: $darkGrey;
+        margin-left: 8vw;
+        margin-bottom: 3vh;
+    }
+    ul{
+        line-height: 2;
+        margin-left: 9vw;
+        font-size: $font-med;
+    }
+}

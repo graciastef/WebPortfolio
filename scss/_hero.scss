@@ -1,0 +1,119 @@
+.hero{
+    
+  
+    margin-left: 0.625rem;
+    &__content{
+        position: absolute;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    &__image{
+
+        position: relative;
+        background-image: url('../images/gracia.jpg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-width: auto;
+        min-height: 14.625rem;
+        margin-top: 0.625rem;
+        margin-right: 0.625rem;
+        margin-left: 0.625rem;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        zoom: 1;
+
+        @include breakpoint-up(medium){
+            min-height: 28rem;
+            margin-bottom: 5rem;
+        }
+        @include breakpoint-up(large){
+            float: right;
+            min-width: 50rem;
+            min-height: 35rem;
+            left: 10%;
+            z-index: -1;
+        }
+        
+           
+    }
+    .text-container {
+
+        position:relative;
+        display:inline-block;
+        overflow: hidden;
+        
+    }
+    &__text{
+        position: relative;
+        display: inline-block;
+        margin:0 1.5rem;
+        text-align: left;
+        justify-content: center;
+        overflow: hidden;
+        font-size: $font-sm;
+
+        @include breakpoint-up(medium){
+            margin: 0;
+            padding: 0 5rem;
+            font-size: 1.5rem;
+        }
+        @include breakpoint-up(large){
+            margin-left: 5rem;
+            font-size: $font-lg;
+            position: absolute;  
+            float: left;
+            z-index: 1;
+        }
+
+        &__extra_margin1{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 12rem;
+            }
+        }
+        &__extra_margin2{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 14rem;
+            }
+        }
+        &__extra_margin3{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 16rem;
+            }
+        }
+        &__extra_margin4{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 18rem;
+            }
+        }
+        &__extra_margin5{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 20rem;
+            }
+        }
+        &__extra_margin6{
+            @include breakpoint-up(large){
+                position: absolute;
+                margin-top: 22rem;
+            }
+        }
+
+        mark.colored{
+            color:$deepBlue;
+            background: none;
+        }
+
+
+
+       
+    }
+
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/style.css">
+
+  <title>About Me</title>
+</head>
+<body>
+    <header class="header">
+        <div class ="has_fade"></div>
+        <nav class="flex flex-jc-sb flex-ai-c">
+    
+          <a id="btnHamburger" href="#" class="header__toggle hide-for-desktop" > 
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
+          <div class="header__links hide-for-mobile">
+            <a href="../index.html">Home</a>
+            <a href="#">About Me</a>
+            <a href="../pages/portfolio.html">Portfolio</a>
+            <a href="../pages/contact.html">Contact</a>
+          </div>
+    
+        </nav> 
+    
+        <div class="header__menu has_fade">
+          <a href="../index.html">Home</a>
+          <a href="#">About Me</a>
+          <a href="../pages/portfolio.html">Portfolio</a>
+          <a href="../pages/contact.html">Contact</a>
+        </div>
+    </header>
+    <h1 class="title">Education</h1>
+
+    <div id="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2><a href="https://www.ji.sjtu.edu.cn/about/" target="_blank">University of Michigan - Shanghai Jiaotong University Joint Institute 
+          </a></h2>
+          <p>2017 - 2021 (Shanghai, China)</p>
+          <p>BSc in Electrical and Computer Engineering</p>
+          <p>Awards:</p>
+          <ul>
+            <li>JI International Students Admission Scholarship - Merit Based</li>
+            <li>JI International Student Scholarship (renewable annually)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content right">
+          <h2><a href="http://www.hchs.edu.my/" target="_blank">Han Chiang High School</a> </h2>
+          <p>2014 - 2016 (Penang, Malaysia)</p>
+          <p>Graduated in the top 5% of the class based on Unified Examination Certificate (UEC) national examination result.</p>
+          <p>Fun fact: I was 15 when I first lived alone abroad.</p>
+         
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-icon">
+          <i class="fa fa-envelope-o" aria-hidden="true"></i>
+        </div>
+        <div class="timeline-content">
+          <h2><a href="https://www.jms.sch.id/" target="_blank">Jakarta International Multicultural School </a></h2>
+          <p>2013-2014 (Jakarta, Indonesia)</p>
+          <ul>
+            <li>Graduated top in class by scoring 7 As on IGCSE </li>
+            <li>Received Certificate of merit for academic  excellence</li>
+          </ul>
+          <p>Fun fact: I skipped year 9 and was accelerated to year 10.</p>
+        </div>
+      </div>
+    </div>
+    <div class="interests">
+      <h1 class="title">Job Interests</h1>
+      <h2 class="textScroll">The kind of work that interests me most is one that involves:</h2>
+      <ul class="textScroll">
+        <li>Planning</li>
+        <li>Data analysis</li>
+        <li>Problem solving</li>
+        <li>Creative thinking</li>
+        <li>Team work</li>
+      </ul>
+    </div>
+
+    <section class="qualifications">
+      <h1 class="title">Qualifications</h1>
+      <div class="box_grid">
+    
+            <div class="qualifications__item">
+              <div class="front">
+                <div class="qualifications__image" style="background-image: url('../images/laptop_bright.svg')"></div>
+                <div class="qualifications__text">Technical Skills</div>
+              </div> 
+              <div class="back qualifications__text qualifications__listgrid">
+                <ul>
+                  <li>SQL</li>
+                  <li>Python</li>
+                  <li>C/C++</li>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>XML</li>
+                  <li>LinuxOS</li>
+                  <li>Matlab</li>
+                  <li>Arduino</li>
+                </ul>
+              </div>
+            </div>
+            <div class="qualifications__item">
+              <div class="front">
+                <div class="qualifications__image" style="background-image: url('../images/language_bright.svg')"></div>
+              <div class="qualifications__text">Languages</div>
+              </div>
+              <div class="back qualifications__text qualifications__listgrid qualifications__listgrid__extra_margin">
+                <ul>
+                  <li>English</li>
+                  <li>Indonesian</li>
+                  <li>Chinese</li>
+                </ul>
+              </div>
+            </div>  
+      </div>
+        
+
+
+      
+      
+    </section>
+
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/timeline.js"></script>
+    <script src="../js/cards.js"></script>
+    <script src="../js/displayOnScroll.js"></script>
+</body>
