@@ -1,5 +1,7 @@
 const duration = 300;
 const leaveDuration = 250;
+
+
 class ExpandableCard {
   constructor(node) {
     this.backdropEl = document.createElement("DIV");
@@ -18,9 +20,10 @@ class ExpandableCard {
     this.animatingFlag = false;
 
     this.hostEl.addEventListener("click", () => {
-      this.expand();
       if(this.expanded){
         this.collapse();
+      }else{
+        this.expand();
       }
     });
   }

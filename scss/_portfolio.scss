@@ -4,8 +4,7 @@ $color-secondary: #18ffff;
 $color-bg: #37474f;
 
 * {
-  margin: 0;
-  padding: 0;
+
   box-sizing: border-box;
 }
 p{
@@ -23,10 +22,18 @@ ul{
   margin-left: 3rem;
 }
 a{
-    color: $darkGrey;
+    color: $pastelPink;
     &:hover{
         color: $pastelPink;
     }
+    @include breakpoint-up(large){
+      color: $darkGrey;
+    }
+}
+
+.title{
+  padding: 0;
+  margin: 0;
 }
 
 .page-wrapper {
@@ -45,11 +52,16 @@ a{
   background: white;
   border-radius: 0.381px;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+  &:hover{
+    transform:scale(1.1);
+  }
   cursor: pointer;
   [collapsedContent] {
     display: flex;
     flex-direction: row;
     padding: 1.14rem;
+    
     @include breakpoint-down(medium){
       border-top:28px solid #ffffff;
       border-bottom:28px solid #ffffff;
@@ -133,5 +145,13 @@ a{
     margin: 0;
     padding: 0;
   }
+
+
+.keywords{
+  font-size: 0.75rem;
+  @include breakpoint-up(medium){
+    font-size: $font-sm;
+  }
+}
 
 }

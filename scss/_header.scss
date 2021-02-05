@@ -65,6 +65,7 @@
 
         a{
             font-size: $font-med;
+            font-weight: regular;
             color:$white;
             position: relative;
             transition: color 300ms ease-in-out;
@@ -98,8 +99,10 @@
         left: 50%;
         transform: translateX(-50%);
         padding: 1.5rem;
+    
         a{
             font-size: $font-med;
+            font-weight: regular;
             color: $white;
             display: block;
             padding-left: 0.625rem;
@@ -111,6 +114,7 @@
         }
     }
 
+   
    
 
 

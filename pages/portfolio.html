@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../dist/style.css">
 
   <title>Portfolio</title>
@@ -40,6 +40,7 @@
         </div>
     </header>
     <div class="portfolio">
+      <h1 class="title">Portfolio<sup><span id="infoButton" class="info"></span></sup></h1>
         <div class="page-wrapper">
 
           <div id="profile-1" class="expandable-card">
@@ -47,7 +48,7 @@
               <div collapsedContent>
                 <div class="expandable-card--left-col col">
                   <div class="expandable-card--profile-image" style="background: gold;">
-                    JP
+                    LFP
                   </div>
                 </div>
                 <div class="expandable-card--right-col col">
@@ -92,7 +93,7 @@
                   <div class="expandable-card--sub-title">
                     <p>Elderly Care Assistant Robot</p>
                     <p>UMJI-SJTU VE450 Course Project</p>
-                    <p>12/2019 - 01/2020</p>
+                    <p class="keywords">Keywords: Software engineering, Product design and implementation</p>
                   </div>
                 </div>
               </div>
@@ -153,7 +154,7 @@
                     <div class="expandable-card--sub-title" >
                       <p>Detection and Prediction of Communities in Friendster</p>
                       <p>UMJI-SJTU VE444 Course Project</p>
-                      <p>12/11/2020</p>
+                      <p class="keywords">Keywords: Community Detection, Data Analysis, Networks </p>
                      
                     </div>
                   </div>
@@ -165,7 +166,7 @@
                     that have been proposed to perform community detection within networks with varying performance. However, the performance of
                     these algorithms deteriorate as the structure of networks become more complex and the fraction of the neighbor of nodes belonging
                     to different communities than that of the benchmarking node increases. Thus, choosing the proper algorithm to give a reliable community
-                    detection result is a tricky matter. In this paper, we explored several community detection algorithms and used the central node based link prediction(CLPE) method to detect
+                    detection result is a tricky matter. In this paper, we explored several community detection algorithms and implemented the central node based link prediction(CLPE) method in Python to detect
                     communities within Friendster.<br>
                     
                     Click <a href="../pdf/ve444_project.pdf" target="blank">here</a> to read the full report
@@ -191,14 +192,14 @@
                     <div class="expandable-card--sub-title">
                       <p>Photolitography Overlay for Patterning of Integrated Circuitry</p>
                       <p>UMJI-SJTU VE01 Course Project</p>
-                      <p>07/31/2020</p>
+                      <p class="keywords">Keywords: Multiple linear regression, Data analysis, Neural network</p>
                     </div>
                   </div>
                 </div>
                 <div expandedContent class="scroll-box">
                   <div class="mock-content"></div>
                   <p>
-                    Multiple-linear regression plays a significant role in our life. For instance, the overlay error in photolitog- raphy can be describes using a multiple-linear regression model. In this project, we try to analyze various models using method of multiple-linear regression tool and tries to improve the base model. Then we try to use pytorch, an open source package for machine learning, to implement a neural network for fitting the data. 
+                    Multiple-linear regression plays a significant role in our life. For instance, the overlay error in photolitography can be describes using a multiplelinear regression model. In this project, we try to analyze various models using method of multiple-linear regression tool and tries to improve the base model. Then we try to use pytorch, an open source package for machine learning, to implement a neural network for fitting the data. 
                     <br>
                     
                     Click <a href="../pdf/401_project.pdf" target="blank">here</a> to read the full report
@@ -222,7 +223,7 @@
                     <div class="expandable-card--sub-title">
                       <p>Reverse Polish-Notation Calculator</p>
                       <p>UMJI-SJTU VE280 Course Project</p>
-                      <p>07/20/2019</p>
+                      <p class="keywords">Keywords: RPN calculator,  C++ Programming</p>
                     </div>
                   </div>
                 </div>
@@ -231,7 +232,7 @@
                   <p>
                     An RPN calculator is one in which the operators appear after their respective operands, rather than between them. So, instead of computing the following: (2 + 3) * 5, an RPN calculator would compute this equivalent expressionas 2 3 + 5 *. To print result, enter "p". Each input are pushed to the top of the stacks, enter "d" to duplicate the item at the top of the stack. To negate the item at the top of the stack, enter "n". To clear the stack, enter "c". To print all items on the stack, enter "a". To quit the program, enter "q".
                     <br>
-                    Here is an examplar input for 2 * (3 + 4): 
+                    Here is an examplar input for 2 * (3 + 4): <br>
                     2<br>
                     3<br>
                     4<br>

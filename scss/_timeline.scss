@@ -123,7 +123,7 @@ h2{
 
 }
 
-#timeline .timeline-item .timeline-content p {
+#timeline .timeline-item .timeline-content p, #timeline .timeline-item .timeline-content ul {
   color: $darkGrey;
   padding-top: 10px;
   font-size: $font-sm;

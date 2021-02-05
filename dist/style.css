@@ -271,7 +271,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 0.875rem;
   background-color: #2C3C44;
   color: white;
@@ -292,7 +292,7 @@ body.noscroll {
 }
 
 h1, h2, h3 {
-  font-weight: 400;
+  font-weight: bold;
   line-height: 1.5rem;
   color: white;
   margin-top: 0px;
@@ -305,7 +305,7 @@ h1 {
 }
 @media (min-width: 40rem) {
   h1 {
-    font-weight: 700;
+    font-weight: bold;
     font-size: 1.6rem;
   }
 }
@@ -325,7 +325,7 @@ h2 {
 }
 
 p, ul {
-  font-weight: 300;
+  font-weight: light;
   line-height: 1.5;
   font-size: 0.875rem;
 }
@@ -440,6 +440,43 @@ a {
   transform: rotateY(180deg);
 }
 
+.info {
+  width: 1em;
+  height: 1em;
+  background-color: #131313;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.2em;
+  cursor: pointer;
+}
+.info:before {
+  content: "?";
+  color: white;
+  font-size: 0.5em;
+}
+.info:hover {
+  background-color: #D99FAB;
+}
+
+.info-expand {
+  visibility: hidden;
+  width: 6em;
+  height: 0.5em;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: lighter;
+  color: white;
+  font-size: 0.5em;
+  margin-left: 0.5em;
+  padding: 0 0.5em;
+  align-items: center;
+  justify-content: center;
+}
+.info-expand:before {
+  content: "Click on the cards!";
+}
+
 .header {
   width: 100%;
   position: relative;
@@ -490,6 +527,7 @@ a {
 }
 .header__links a {
   font-size: 1.125rem;
+  font-weight: regular;
   color: white;
   position: relative;
   transition: color 300ms ease-in-out;
@@ -516,6 +554,7 @@ a {
 }
 .header__menu a {
   font-size: 1.125rem;
+  font-weight: regular;
   color: white;
   display: block;
   padding-left: 0.625rem;
@@ -574,6 +613,7 @@ a {
 .hero__text {
   position: relative;
   display: inline-block;
+  font-weight: regular;
   margin: 0 1.5rem;
   text-align: left;
   justify-content: center;
@@ -585,6 +625,7 @@ a {
     margin: 0;
     padding: 0 5rem;
     font-size: 1.5rem;
+    font-weight: bold;
   }
 }
 @media (min-width: 64.0625rem) {
@@ -630,6 +671,12 @@ a {
   .hero__text__extra_margin6 {
     position: absolute;
     margin-top: 22rem;
+  }
+}
+@media (min-width: 64.0625rem) {
+  .hero__text__extra_margin7 {
+    position: absolute;
+    margin-top: 24rem;
   }
 }
 .hero__text mark.colored {
@@ -746,7 +793,7 @@ h2 {
   border-radius: 3px 3px 0 0;
 }
 
-#timeline .timeline-item .timeline-content p {
+#timeline .timeline-item .timeline-content p, #timeline .timeline-item .timeline-content ul {
   color: #131313;
   padding-top: 10px;
   font-size: 0.875rem;
@@ -853,6 +900,7 @@ h2 {
   margin-bottom: 3vh;
 }
 .interests ul {
+  color: #131313;
   line-height: 2;
   margin-left: 9vw;
   font-size: 1.125rem;
@@ -1053,8 +1101,6 @@ h2 {
   }*/
 }
 .portfolio * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 .portfolio p {
@@ -1070,10 +1116,19 @@ h2 {
   margin-left: 3rem;
 }
 .portfolio a {
-  color: #131313;
+  color: #D99FAB;
 }
 .portfolio a:hover {
   color: #D99FAB;
+}
+@media (min-width: 64.0625rem) {
+  .portfolio a {
+    color: #131313;
+  }
+}
+.portfolio .title {
+  padding: 0;
+  margin: 0;
 }
 .portfolio .page-wrapper {
   max-width: 860px;
@@ -1089,7 +1144,11 @@ h2 {
   background: white;
   border-radius: 0.381px;
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
   cursor: pointer;
+}
+.portfolio [cardContent]:hover {
+  transform: scale(1.1);
 }
 .portfolio [cardContent] [collapsedContent] {
   display: flex;
@@ -1158,4 +1217,12 @@ h2 {
 .portfolio .mock-content {
   margin: 0;
   padding: 0;
+}
+.portfolio .keywords {
+  font-size: 0.75rem;
+}
+@media (min-width: 40rem) {
+  .portfolio .keywords {
+    font-size: 0.875rem;
+  }
 }/*# sourceMappingURL=style.css.map */

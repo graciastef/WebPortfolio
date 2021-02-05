@@ -12,7 +12,7 @@ html{
 body{
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oxygen', sans-serif;
     font-size: $font-sm; //rem = px16
     background-color: $dirtyGreen;
     color: $white;
@@ -37,7 +37,7 @@ body{
 
 //Text
 h1,h2,h3{
-    font-weight: 400;
+    font-weight: bold;
     line-height: 1.5rem;
     color: $white;
     margin-top: 0px;
@@ -49,7 +49,7 @@ h1{
     line-height: 1.5;
 
     @include breakpoint-up(medium){
-        font-weight: 700;
+        font-weight: bold;
         font-size: 1.6rem;
     }
 
@@ -66,7 +66,7 @@ h2{
 }
 
 p, ul{
-    font-weight: 300;
+    font-weight: light;
     line-height: 1.5;
     font-size: $font-sm;
     @include breakpoint-up(large){
@@ -191,4 +191,49 @@ a{
   
 .flipped .front {
     transform: rotateY(180deg);
+}
+
+.info{
+    
+    
+    width: 1em;
+    height: 1em;
+    background-color: $darkGrey;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 0.2em;
+    cursor: pointer;
+    
+    &:before{
+        content:"?";
+        color: $white;
+        font-size: 0.5em;
+    }
+
+    &:hover{
+        background-color: $pastelPink;
+    }
+
+}
+
+.info-expand{
+    visibility: hidden;
+    width: 6em;
+    height: 0.5em;
+    background-color: rgba(255,255,255,0.3);
+    font-weight: lighter;
+    color: $white;
+    font-size: 0.5em;
+    margin-left: 0.5em;
+    padding: 0 0.5em;
+    align-items: center;
+    justify-content: center;
+ 
+    &:before{
+        content: "Click on the cards!";
+
+    }
+    
 }
