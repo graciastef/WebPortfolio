@@ -293,6 +293,7 @@
   }
 
   .textScroll {
+
     @include breakpoint-up(large){
       opacity: 0;
       transform: translateX(-50px);
@@ -302,7 +303,10 @@
   }
   
   .textVisible {
-    opacity: 1;
-    transform: translateX(0);
+    @include breakpoint-up(large){
+      opacity: 1;
+      transform: translateX(0);
+    }
+
   }
   
