@@ -294,19 +294,16 @@
 
   .textScroll {
 
-    @include breakpoint-up(large){
       opacity: 0;
       transform: translateX(-50px);
       transition: all 1.2s ease-out;
-    }
+  
     
   }
   
   .textVisible {
-    @include breakpoint-up(large){
       opacity: 1;
       transform: translateX(0);
-    }
 
   }
   
