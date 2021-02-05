@@ -3,7 +3,7 @@ const body = document.querySelector('body');
 const header = document.querySelector('.header');
 const overlay = document.querySelector('.overlay');
 const fadeElems = document.querySelectorAll('.has_fade');
-const infoEl = document.querySelector('#infoButton');
+
 
 
 btnHamburger.addEventListener('click', function(){
@@ -27,27 +27,5 @@ btnHamburger.addEventListener('click', function(){
     }
 
     
-});
-
-infoEl.addEventListener('click', function(){
-    console.log('click info');
-
-    if(infoEl.classList.contains('info')){
-        infoEl.classList.add('fade-in');
-        infoEl.classList.add('info-expand');
-        infoEl.classList.remove('info');
-    }
-    else{
-
-        
-        infoEl.classList.remove('fade-in');
-        infoEl.classList.remove('info-expand');
-        infoEl.classList.add('info');
-        
-        
-    }
-
-
-
 });
 
