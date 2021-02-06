@@ -175,3 +175,4 @@ var c = new ExpandableCard(document.querySelector("#profile-4"));
 var c = new ExpandableCard(document.querySelector("#profile-5"));
 var c = new ExpandableCard(document.querySelector("#profile-6"));
 var c = new ExpandableCard(document.querySelector("#profile-7"));
+var c = new ExpandableCard(document.querySelector("#profile-8"));
