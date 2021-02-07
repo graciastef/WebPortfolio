@@ -3,6 +3,7 @@
 
     &__item{
         justify-self: center;
+        align-items: center;
         width: 18.46rem;
         height:18.42rem;
         margin: 3vh;
@@ -58,10 +59,10 @@
     &__listgrid{
         position: relative;
         margin: 2.7rem 0;
-        font-weight: 500;
+        font-weight: regular;
         font-size: $font-sm;
         @include breakpoint-up(medium){
-            margin: 3rem 0;
+            margin: 6rem 0;
             font-size: $font-med;
         }
 

@@ -908,6 +908,7 @@ h2 {
 
 .qualifications__item {
   justify-self: center;
+  align-items: center;
   width: 18.46rem;
   height: 18.42rem;
   margin: 3vh;
@@ -962,12 +963,12 @@ h2 {
 .qualifications__listgrid {
   position: relative;
   margin: 2.7rem 0;
-  font-weight: 500;
+  font-weight: regular;
   font-size: 0.875rem;
 }
 @media (min-width: 40rem) {
   .qualifications__listgrid {
-    margin: 3rem 0;
+    margin: 6rem 0;
     font-size: 1.125rem;
   }
 }
