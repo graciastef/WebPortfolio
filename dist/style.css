@@ -1221,6 +1221,7 @@ h2 {
 }
 .portfolio .keywords {
   font-size: 0.75rem;
+  color: #0099A5;
 }
 @media (min-width: 40rem) {
   .portfolio .keywords {
